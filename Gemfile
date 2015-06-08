@@ -1,3 +1,5 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "bubble-wrap", "~> 1.3.0"
+gem 'rake'
+gem 'afmotion'
+gem 'bubble-wrap', require: ['bubble-wrap/core', 'bubble-wrap/reactor']

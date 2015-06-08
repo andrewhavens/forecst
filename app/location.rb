@@ -21,13 +21,13 @@ module FC
       location_manager.stopUpdatingLocation
       puts "Location recieved"
       coordinates = new_location.coordinate
-      location = "#{coordinates.width},#{coordinates.height}"
+      location = "#{coordinates.latitude},#{coordinates.longitude}"
       App::Persistence[:location] = location
       @callback.call(location)
     end
 
     def locationManager(manager, didFailWithError: error)
-      puts "Error recieved"
+      puts "Error received"
       location_manager.stopUpdatingLocation
 
       case error.code

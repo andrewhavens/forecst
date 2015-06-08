@@ -2,8 +2,6 @@
 $:.unshift("/Library/RubyMotion/lib")
 require "motion/project/template/osx"
 require "bundler"
-require "bubble-wrap/reactor"
-
 Bundler.require
 
 Motion::Project::App.setup do |app|
@@ -24,6 +22,6 @@ Motion::Project::App.setup do |app|
   app.frameworks += ["CoreLocation", "Security"]
 
   app.detect_dependencies = false
-  app.deployment_target = "10.8"
+  app.deployment_target = "10.9"
   app.sdk_version = "10.8"
 end

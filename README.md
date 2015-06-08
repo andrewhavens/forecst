@@ -13,3 +13,7 @@ I've open sourced it because it was never put up on the MAS (Mac App Store) and 
 from it.
 
 Feel free to send PR's if you would like.
+
+### Registering an API key
+
+To use the Forecast.io API, you need to register for an API key: https://developer.forecast.io. Then you can update the `API_KEY` variable found in `weather.rb`.
